@@ -39,7 +39,7 @@ def unzip(wordlist, infile):
 				print("Password Found!")
 				for zword in zfile:
 					print(str(zword)[2:-1])
-					found = True
+				found = True
 		except:
 			print("nope")
 
