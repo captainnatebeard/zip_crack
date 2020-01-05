@@ -34,11 +34,11 @@ def unzip(wordlist, infile):
 				os.system("clear")
 				print("running through wordlist...")
 				print(word, end='')
-				bword = bytes(word.rstrip(), 'utf-8')
+				bword = bytes(word.rstrip(), 'ascii')
 				zfile = z.open(zname, 'r', bword)
 				print("Password Found!")
-				for word in zfile:
-					print(str(word)[2:-1])
+				for zword in zfile:
+					print(str(zword)[2:-1])
 					found = True
 		except:
 			print("nope")
