@@ -47,5 +47,4 @@ def unzip(wordlist, infile):
 
 if __name__== "__main__":
 	main()
-	
-#hi Justin
+
